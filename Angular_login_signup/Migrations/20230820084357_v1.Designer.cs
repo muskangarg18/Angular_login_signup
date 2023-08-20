@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Angular_login_signup.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230819125819_v1")]
+    [Migration("20230820084357_v1")]
     partial class v1
     {
         /// <inheritdoc />
@@ -42,6 +42,9 @@ namespace Angular_login_signup.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Token")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserName")

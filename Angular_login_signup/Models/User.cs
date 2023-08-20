@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Security.Claims;
 
 namespace Angular_login_signup.Models
 {
@@ -11,6 +12,6 @@ namespace Angular_login_signup.Models
         public string UserName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-
+        public string Token { get; set; }
     }
 }
